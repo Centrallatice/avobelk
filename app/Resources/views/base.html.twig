@@ -64,11 +64,9 @@
                             </div>
                             <div class="sociallink">
                                 <p>
-                                    <a href="https://www.facebook.com/Cabinet-dAvocat-de-Guillaume-Buguet-1527332600923122/?fref=ts" target="_blank"><img src="http://www.avocat-buguet.com//img/facebook-basdepage.png">
+                                    <a href="{{facebook}}" target="_blank"><img src="/img/facebook-basdepage.png">
                                     </a>
-                                    <a href="https://plus.google.com/u/0/+ScmBuguetdejardinCabinetdavocatValenciennes/posts" target="_blank"><img src="http://www.avocat-buguet.com//img/google-basdepage.png">
-                                    </a>
-                                    <a href="https://twitter.com/AvocatGui"><img src="http://www.avocat-buguet.com//img/twitter-basdepage.png">
+                                    <a href="{{googleplus}}" target="_blank"><img src="/img/google-basdepage.png">
                                     </a>
                                 </p>
                             </div>
@@ -76,21 +74,21 @@
                     </div>
                     <div class="col-sm-6 sitemap">
                         <ul>
-                            <li class="active"><a href="http://www.avocat-buguet.com//accueil.html">Accueil</a>
+                            <li class="active"><a href="/accueil.html">Accueil</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/differents-droits.html">Les différents Droits</a>
+                            <li><a href="differents-droits.html">Les différents Droits</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/autres-domaines-interventions.html">Autres Domaines d'interventions</a>
+                            <li><a href="autres-domaines-interventions.html">Autres Domaines d'interventions</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/utilite-avocat.html">A Quoi sert un avocat ?</a>
+                            <li><a href="utilite-avocat.html">A Quoi sert un avocat ?</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/honoraires.html">Honoraires</a>
+                            <li><a href="honoraires.html">Honoraires</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/actualites.html">Actualités</a>
+                            <li><a href="actualites.html">Actualités</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/liens-utiles.html">Liens utiles</a>
+                            <li><a href="liens-utiles.html">Liens utiles</a>
                             </li>
-                            <li><a href="http://www.avocat-buguet.com/contact.html">Contacts</a>
+                            <li><a href="contact.html">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -114,13 +112,8 @@
     <script src="{{ asset('js/vendor/json2.js') }}"></script>
     <script src="{{ asset('js/vendor/js.cookie.js') }}"></script>
     <script src="{{ asset('js/vendor/bootbox.min.js') }}"></script>
-    <script src="{{ asset('js/vendor/moment-with-locales.js') }}"></script>
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="{{ asset('node_modules/moment/moment.js') }}"></script>
-    <script>
-        moment.updateLocale('fr');
-    </script>
+    
     <script src="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.5.1/js/froala_editor.pkgd.min.js') }}"></script>
     <script src="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.5.1/js/plugins/lists.min.js') }}"></script>
     {% endblock %}

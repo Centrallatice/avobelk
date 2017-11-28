@@ -1,5 +1,6 @@
 {
     "name": "sylvain/avocat_belkebir",
+    "description": "Site de l'avocat Farid Belkebir",
     "license": "proprietary",
     "type": "project",
     "autoload": {
