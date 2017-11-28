@@ -1,0 +1,258 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{parent()}}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="row Pres3blocs">
+            <div class="entete col-xs-12 col-sm-6 col-sm-offset-3">
+                <h2>Un grand champ d'action<br /> dans le domaine du droit</h2>
+                <h3>Ci-dessous, nos informations en droit commercial,<br> des sociétés, des affaires et dans le domaine bancaires</h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 acccommercial animated fadeInLeft">
+                <div class="medaillon">
+                    <img src="{{ asset('img/accueil/cercle-commercial.png') }}" class="img-circle">
+                </div>
+                <div class="acc-pres-titre">
+                    <h4>Droit Commercial et Procédures</h4>
+                </div>
+                <div class="acc-pres-texte by3First">
+                    <p>La complexité du droit pénal et de la procédure pénale nécessite, même si ce n’est nullement une exigence procédurale, que vous puissiez être assisté par un Avocat, à tous les stades de la procédure pénale (garde à vue, instruction, phase de jugement), et quelques soit votre statut (prévenu/accusé ou victime).</p>
+                </div>
+                <div class="readmore">
+                    <p><a href="droit-penal.html"><i class="fa fa-search"></i></a></p>
+                    <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 accsociete animated fadeIn">
+                <div class="medaillon">
+                    <img src="{{ asset('img/accueil/cercle-affaire.png') }}" class="img-circle">
+                </div>
+                <div class="acc-pres-titre">
+                    <h4>Droit des Sociétés et des Affaires</h4>
+                </div>
+                <div class="acc-pres-texte by3First">
+                    <p>C'est un droit d'actualité avec une réglementation de plus en plus abondante qui suscite des litiges très nombreux. L'Avocat peut être le conseil de l'employeur ou du salarié dans les rapports individuels de droit du travail.</p>
+                </div>
+                <div class="readmore">
+                    <p><a href="droit-travail.html"><i class="fa fa-search"></i></a></p>
+                    <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-4 accbancaire animated fadeInRight">
+                <div class="medaillon">
+                    <img src="{{ asset('img/accueil/cercle-banque.png') }}" class="img-circle">
+                </div>
+                <div class="acc-pres-titre">
+                    <h4>Droit bancaire et financier</h4>
+                </div>
+                <div class="acc-pres-texte by3First">
+                    <p>Que ce soit dans le cadre des procédures de divorce, de séparation et des difficultés liées à l'hébergement des enfants mineurs, des pensions alimentaires, droit de visite et d'hébergement, ou prestation compensatoire.</p>
+                </div>
+                <div class="readmore">
+                    <p><a href="droit-travail.html"><i class="fa fa-search"></i></a></p>
+                    <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid autre-domaine">
+        <div class="container topme">
+            <div class="row Pres3blocsCpl">
+                <div class="entete col-xs-12 col-sm-6 col-sm-offset-3">
+                    <h2>D'autres domaines recherchés ?</h2>
+                    <h3>Notre cabinet vous propose d'autres solutions<br> dans le domaine du droit.</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4 accautredomaines  animated fadeInLeft">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-travail.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>Autres Domaines d'interventions</h4>
+                    </div>
+                    <div class="acc-pres-texte by3First" style="height: 128px;">
+                        <p>Retrouvez ici l’ensemble des autres domaines d'activités traités en tant qu'avocat au Barreau comme le droit Civil ou le droit des affaires.</p>
+                    </div>
+                    <div class="readmore">
+                        <p><a href="droit-travail.html"><i class="fa fa-search"></i></a></p>
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 accavocat animated fadeIn">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-securitesocial.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>A quoi sert un avocat ?</h4>
+                    </div>
+                    <div class="acc-pres-texte by3First" style="height: 128px;">
+                        <p>Tout avocat respectueux de la déontologie de sa profession se sait investi de devoirs, devoirs qui se personnifient sur différents rôles essentiels.</p>
+                    </div>                    
+                    <div class="readmore">
+                        <p><a href="droit-travail.html"><i class="fa fa-search"></i></a></p>
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 acchonoraires animated fadeInRight">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-batiment.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>Les Honoraires</h4>
+                    </div>
+                    <div class="acc-pres-texte by3First" style="height: 128px;">
+                        <p>L’Avocat et les honoraires : une transparence exigée envers le client sur tout le processus de gestion du dossier.</p>
+                    </div>
+                    <div class="readmore">
+                        <p><a href="droit-travail.html"><i class="fa fa-search"></i></a></p>
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid complements">
+        <div class="container topme">
+            <div class="row Pres3blocsCpl">
+                <div class="entete col-xs-12 col-sm-6 col-sm-offset-3">
+                    <h2>Compléments d'informations</h2>
+                    <h3>Voici nos informations utiles pour préparer<br> notre rencontre au sein du cabinet.</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4 accautredomaines  animated fadeInLeft">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-travail.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>Autres Domaines d'interventions</h4>
+                    </div>
+                    <div class="readmore">
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 accavocat animated fadeIn">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-securitesocial.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>A quoi sert un avocat ?</h4>
+                    </div>            
+                    <div class="readmore">
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 acchonoraires animated fadeInRight">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-batiment.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>Les Honoraires</h4>
+                    </div>
+                    <div class="readmore">
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid actualites">
+        <div class="container topme">
+            <div class="row Pres3blocsCpl">
+                <div class="entete col-xs-12 col-sm-6 col-sm-offset-3">
+                    <h2>Compléments d'informations</h2>
+                    <h3>Voici nos informations utiles pour préparer<br> notre rencontre au sein du cabinet.</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4 accautredomaines  animated fadeInLeft">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-travail.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>Autres Domaines d'interventions</h4>
+                    </div>
+                    <div class="readmore">
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 accavocat animated fadeIn">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-securitesocial.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>A quoi sert un avocat ?</h4>
+                    </div>            
+                    <div class="readmore">
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 acchonoraires animated fadeInRight">
+                    <div class="medaillon">
+                        <img src="{{ asset('img/accueil/cercle-droit-batiment.png') }}" class="img-circle">
+                    </div>
+                    <div class="acc-pres-titre">
+                        <h4>Les Honoraires</h4>
+                    </div>
+                    <div class="readmore">
+                        <p><a href="droit-penal.html" role="button" class="btn btn-primary">En savoir plus</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row rowContact">
+            <div class="col-xs-12 col-sm-4 blocCoordonnees">
+                <h3>CONTACT</h3>
+                <div class="adresse">
+                    <p>Cabinet d'Avocat de VALENCIENNES</p>
+                    <p>FARID BELKEBIR</p>
+                    <p>{{adresse}}</p>
+                </div>
+                <div class="horaires">
+                    <p>Horaires d'Ouverture du Secrétariat</p>
+                    <p>{{horaires}}</p>
+                </div>
+                <div class="telephone">
+                    <p><i class="fa fa-phone"></i> Téléphone : {{tel}}</p>
+                    <p><i class="fa fa-fax"></i> Fax : {{fax}}</p>
+                </div>
+                <div class="email">
+                    <p><i class="fa fa-envelope-o"></i> {{mail}}</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-1 blocFormContact">
+                <h3>Envoyer un message</h3>
+                <form method="POST" action="index.php">
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="nomprenom" placeholder="Nom Prénom">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="telephone" placeholder="Téléphone">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" name="ville" placeholder="Ville">
+                    </div>
+                    <div class="col-xs-12">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-xs-8 block-center text-center col-xs-offset-2 col-sm-5">
+                        <input type="submit" name="validSendContact" class="btn btn-primary" value="Envoyer le Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{parent()}}
+    <script src="{{ asset('js/vendor/jquery.matchHeight-min.js') }}"></script>
+    <script src="{{ asset('js/home.js') }}"></script>
+{% endblock %}

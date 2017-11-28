@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('home')}}">
+                <img src="{{asset('img/logo_avocat_belkebir.png')}}">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a {% if app.request.get('_route') == 'home' %}class="active"{% endif%} href="{{ path('home')}}">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Les diffèrents droits <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                          <li><a href="./droit-travail.html">Droit du travail</a></li>
+                          <li><a href="./droit-famille.html">Droit de la famille</a></li>
+                          <li><a href="./droit-penal.html">Droit pénal</a></li>
+                    </ul>
+                </li>
+                <li><a href="./autres-domaines-interventions.html">Autres Domaines d'interventions</a></li>
+                <li><a href="./utilite-avocat.html">A Quoi sert un avocat ?</a></li>
+                <li><a href="./honoraires.html">Honoraires</a></li>
+                <li><a href="./actualites.html">Actualités</a></li>
+                <li><a href="./liens-utiles.html">Liens utiles</a></li>
+                <li><a href="./contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

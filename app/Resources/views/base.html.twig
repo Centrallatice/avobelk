@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    {% block stylesheets %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap.bigger.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/vendor/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/vendor/animate.css') }}">
+    <link href="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.5.1/css/froala_editor.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}"> {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+
+<body>
+    <header>
+        <div id="coord-top" class="hidden-sm hidden-xs">
+            <div class="container">
+{#                <div class="col-md-10">#}
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>{{adresse}}
+                    <i class="fa fa-phone" aria-hidden="true"></i>{{tel}}
+                    <i class="fa fa-fax" aria-hidden="true"></i>{{fax}}
+                    <i class="fa fa-envelope" aria-hidden="true"></i>{{mail}}
+{#                </div>#}
+                <div class="pull-right">
+                    <a href="./contact.html"><img src="{{asset('img/icone-facebook.png')}}"></a>
+                    <a href="./contact.html"><img src="{{asset('img/icone-googleplus.png')}}"></a>
+                </div>
+            </div>
+        </div>
+        {% include "::menus/main.html.twig" %} {#{% set breadcrumb = block('breadcrumb') %}
+        <ol class="breadcrumb">
+            <li><a href="{{ path('home') }}">Accueil</a>
+            </li>
+            {{breadcrumb|raw}}
+        </ol>
+        #}
+    </header>
+    <main class="main">
+        {% block body %}{% endblock %}
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 colCoord">
+                    <div class="col-xs-5 nopadding">
+                        <img src="{{asset('img/LOGO-BASE.png')}}" border="0" alt="{{nom}} - Avocat">
+                        <div class="leftpiedpage">
+                            <div class="addresse-footer">
+                                <p>Cabinet d'Avocat de VALENCIENNES</p>
+                                <p>FARID BELKEBIR</p>
+                                <p>{{adresse}}</p>
+                            </div>
+                            <div class="telephone">
+                                <p class="redme"><i class="fa fa-phone"></i> Téléphone : {{tel}}</p>
+                                <p><i class="fa fa-fax"></i> Fax : {{fax}}</p>
+                            </div>
+                            <div class="email">
+                                <p><i class="fa fa-envelope-o"></i> {{mail}}</p>
+                            </div>
+                            <div class="sociallink">
+                                <p>
+                                    <a href="https://www.facebook.com/Cabinet-dAvocat-de-Guillaume-Buguet-1527332600923122/?fref=ts" target="_blank"><img src="http://www.avocat-buguet.com//img/facebook-basdepage.png">
+                                    </a>
+                                    <a href="https://plus.google.com/u/0/+ScmBuguetdejardinCabinetdavocatValenciennes/posts" target="_blank"><img src="http://www.avocat-buguet.com//img/google-basdepage.png">
+                                    </a>
+                                    <a href="https://twitter.com/AvocatGui"><img src="http://www.avocat-buguet.com//img/twitter-basdepage.png">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 sitemap">
+                        <ul>
+                            <li class="active"><a href="http://www.avocat-buguet.com//accueil.html">Accueil</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/differents-droits.html">Les différents Droits</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/autres-domaines-interventions.html">Autres Domaines d'interventions</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/utilite-avocat.html">A Quoi sert un avocat ?</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/honoraires.html">Honoraires</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/actualites.html">Actualités</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/liens-utiles.html">Liens utiles</a>
+                            </li>
+                            <li><a href="http://www.avocat-buguet.com/contact.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden-xs hidden-sm col-sm-6 sociauxContent">
+                    <div class="col-xs-12 col-sm-6 fb">
+                        {#<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/Cabinet-dAvocat-de-Guillaume-Buguet-1527332600923122/?fref=ts" data-width="300" data-height="365" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=1677532832490422&amp;container_width=354&amp;height=365&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FCabinet-dAvocat-de-Guillaume-Buguet-1527332600923122%2F%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;width=300"><span style="vertical-align: bottom; width: 300px; height: 365px;"><iframe name="f1bf9a480d1f39c" width="300px" height="365px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=1677532832490422&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df1a1a980c864a3c%26domain%3Davocat-buguet.com%26origin%3Dhttp%253A%252F%252Favocat-buguet.com%252Ffa032872905c98%26relation%3Dparent.parent&amp;container_width=354&amp;height=365&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FCabinet-dAvocat-de-Guillaume-Buguet-1527332600923122%2F%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;show_posts=true&amp;small_header=true&amp;width=300" style="border: none; visibility: visible; width: 300px; height: 365px;" class=""></iframe></span>
+                        </div>#}
+                    </div>
+                    <div class="col-xs-12 col-sm-6 ggl">
+                        {#<div id="___page_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 365px;">
+                            <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 365px;" tabindex="0" vspace="0" width="100%" id="I0_1511813137106" name="I0_1511813137106" src="https://apis.google.com/u/0/_/widget/render/page?usegapi=1&amp;href=https%3A%2F%2Fplus.google.com%2F%2BScmBuguetdejardinCabinetdavocatValenciennes&amp;origin=http%3A%2F%2Favocat-buguet.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.fr.bgeiHW4e_mc.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCO4B3GHXu1VjTG_DXYKgiMW36Ye2g#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1511813137106&amp;_gfid=I0_1511813137106&amp;parent=http%3A%2F%2Favocat-buguet.com&amp;pfname=&amp;rpctoken=35237641" data-gapiattached="true" title="+Badge"></iframe>
+                        </div>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% block javascripts %}
+    <script src="{{ asset('js/vendor/jquery-3.1.1.min.js') }}"></script>
+    <script src="{{ asset('js/vendor/json2.js') }}"></script>
+    <script src="{{ asset('js/vendor/js.cookie.js') }}"></script>
+    <script src="{{ asset('js/vendor/bootbox.min.js') }}"></script>
+    <script src="{{ asset('js/vendor/moment-with-locales.js') }}"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{ asset('node_modules/moment/moment.js') }}"></script>
+    <script>
+        moment.updateLocale('fr');
+    </script>
+    <script src="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.5.1/js/froala_editor.pkgd.min.js') }}"></script>
+    <script src="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.5.1/js/plugins/lists.min.js') }}"></script>
+    {% endblock %}
+</body>
+
+</html>
